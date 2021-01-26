@@ -1,3 +1,5 @@
+exports.dropDownMenu = dropDownMenu();
+
 const dropDownMenu = (button, menu) => {
     const buttonElement = document.getbuttonById(`${button}`);
     const subMenu = document.getbuttonById(`${menu}`);
@@ -15,7 +17,3 @@ const dropDownMenu = (button, menu) => {
         });
     });
 };
-
-dropDownMenu('title', 'dropMenu1');
-dropDownMenu('title2', 'dropMenu2');
-
