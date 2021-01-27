@@ -1,8 +1,6 @@
-exports.dropDownMenu = dropDownMenu();
-
 const dropDownMenu = (button, menu) => {
-    const buttonElement = document.getbuttonById(`${button}`);
-    const subMenu = document.getbuttonById(`${menu}`);
+    const buttonElement = document.getElementById(`${button}`);
+    const subMenu = document.getElementById(`${menu}`);
     
     // Automatically hides menu 
     subMenu.style.display = 'none';
@@ -17,3 +15,5 @@ const dropDownMenu = (button, menu) => {
         });
     });
 };
+
+export default dropDownMenu;
